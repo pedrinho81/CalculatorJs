@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color:blue;
+    text-decoration: none;
+}
+a:visited {
+    color:orangered;
+    text-decoration: none;
+}
+a:hover {color:white;}
+
+body {
+    background-image:url(/calc.JS/img/pexels-frank-cone-3607542.jpg);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.calculator {
+    position:absolute;
+    top: 9px;
+    left: 50%;
+    width: 520px;
+    height: 780px; 
+    margin-left: -17em;
+    padding-bottom: 20px;
+}
+
+.numeric {
+    width: 124px;
+    height: 115px;
+    display: inline-block;
+    background: black;
+    color:white;
+    font-size: 40px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: -5px;
+    padding-top: 40px;
+    cursor: pointer;
+}
+
+.numeric:active{
+    background:orangered
+}
+
+.numericZero{
+    width: 250px !important;
+}
+
+.action {
+    color: orangered;
+}
+.action:active {
+    background-color: white;
+}
+
+.result {
+    border-radius: 50%;
+    background: orangered;
+    color: white;
+}
+
+.visor {
+    
+    top: 20px;
+    background-color: black;
+    width: 490px;
+    height: 220px;
+    font-size: 70px;
+    text-align: right;
+    padding-right: 10px;
+}
+.acc{
+  
+  color:WHITE;
+  width: 500px;
+  font-size: 30px;
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 5px;
+  height: 100px;
+
+}
+
+.footer {
+    position: fixed;
+    left: 100px;
+    bottom:100px;
+    width: 100%;
+    color: orangered;
+    text-align: center;
+    height: 40px;
+}
+
