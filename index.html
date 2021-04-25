@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CalculatorJs</title>
-    <script src="../script.js"></script>
+    <script src="calcs.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"></link>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <script src="https://kit.fontawesome.com/656812c01f.js" crossorigin="anonymous"></script>
@@ -16,24 +16,27 @@
         <div id="accumulator" class="acc"></div>
         <div id="total" class="total" hidden></div>
       </div>
-          <div class="numeric action result" onclick="result()"><i class="fas fa-equals"></i> </div>
-          <div class="numeric action" onclick="simpleClean()"><i class="fas fa-backspace"></i></div>
-          <div class="numeric action" onclick="clearAll()">C</div>
-          <div class="numeric action" onclick="calcular()"><i class="fas fa-plus"></i></div>
-          <div class="numeric action" onclick="calcular()"><i class="fas fa-minus"></i></div>
-          <div class="numeric action" onclick="calcular()"><i class="fas fa-times"></i></div>
-          <div class="numeric action" onclick="calcular()"><i class="fas fa-divide"></i></div>
-          <div class="numeric action" onclick="calcular()"><i class="fas fa-percent"></i></div>
-          <div class="numeric zero" onclick="addNumber(0)">0</div>
+          
+          <div class="numeric action" id="C" onclick="clearAll()">C</div>
+          <div class="numeric action" id="backspace"onclick="simpleClean()"><i class="fas fa-backspace"></i></div>
+          <div class="numeric action" id="porcentagem"onclick="Porcentagem()"><i class="fas fa-percent"></i></div>
+          <div class="numeric action" id="divisao" onclick="calculateAction('/')"><i class="fas fa-divide"></i></div>  
           <div class="numeric" onclick="addNumber(7)">7</div>
           <div class="numeric" onclick="addNumber(8)">8</div>
           <div class="numeric" onclick="addNumber(9)">9</div>
+          <div class="numeric action" id="multiplicacao" onclick="calculateAction('x')"><i class="fas fa-times"></i></div>
           <div class="numeric" onclick="addNumber(4)">4</div>
           <div class="numeric" onclick="addNumber(5)">5</div>
           <div class="numeric" onclick="addNumber(6)">6</div>
-          <div class="numeric" onclick="addNumber(7)">1</div>
-          <div class="numeric" onclick="addNumber(8)">2</div>
-          <div class="numeric" onclick="addNumber(9)">3</div>  
+          <div class="numeric action"id="subtracao" onclick="calculateAction('-')"><i class="fas fa-minus"></i></div>
+          <div class="numeric" onclick="addNumber(1)">1</div>
+          <div class="numeric" onclick="addNumber(2)">2</div>           
+          <div class="numeric" onclick="addNumber(3)">3</div>
+          <div class="numeric action"id="soma" onclick="calculateAction('+')"><i class="fas fa-plus"></i></div>   
+          <div class="numeric zero" onclick="addNumber(0)">0</div>
+          <div class="numeric" onclick="addVirgula()">,</div>  
+          <div class="numeric action result" onclick="result()"><i class="fas fa-equals"></i> </div>
+  
       </div>
     
       <div class="footer">

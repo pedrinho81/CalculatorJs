@@ -13,23 +13,23 @@ a:visited {
 a:hover {color:white;}
 
 body {
-    background-image:url(/calc.JS/img/pexels-frank-cone-3607542.jpg);
+    background-image:url(img/pexels-frank-cone-3607542.jpg);
     font-family:Arial, Helvetica, sans-serif;
 }
 
 .calculator {
-    position:absolute;
-    top: 9px;
+    position:fixed;
+    top: 26%;
     left: 50%;
-    width: 520px;
-    height: 780px; 
+    width: 410px;
+    height: 410px; 
     margin-left: -17em;
     padding-bottom: 20px;
 }
 
 .numeric {
-    width: 124px;
-    height: 115px;
+    width:96px;
+    height: 95px;
     display: inline-block;
     background: black;
     color:white;
@@ -37,9 +37,13 @@ body {
     text-align: center;
     vertical-align: middle;
     margin-left: -5px;
-    padding-top: 40px;
+    padding-top: 20px;
     cursor: pointer;
 }
+.zero {
+    width: 190px;
+}
+
 
 .numeric:active{
     background:orangered
@@ -53,44 +57,81 @@ body {
     color: orangered;
 }
 .action:active {
-    background-color: white;
+    background-color: black;
 }
 
 .result {
-    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    border-radius: 99px;
     background: orangered;
     color: white;
 }
+#total {
+    color: white;
+}
+#soma:active {
+    background: white;
+}
+
+#multiplicacao:active {
+    background: white;
+}
+
+#C:active{
+    background: white;
+}
+
+#backspace:active{
+    background: white;
+}
+
+#porcentagem:active {
+    background: white;
+}
+#divisao:active {
+    background: white;
+}
+#subtracao:active{
+    background: white;
+}
 
 .visor {
-    
-    top: 20px;
+    position: fixed;
+    top: 100px;
+    left: 29.7%;
     background-color: black;
-    width: 490px;
-    height: 220px;
-    font-size: 70px;
-    text-align: right;
-    padding-right: 10px;
+    color: white;
+    width: 382px;
+    height: 76px;
+    font-size: 40px;
+    text-align:right;
+    padding-right: 107px;
 }
 .acc{
-  
-  color:WHITE;
-  width: 500px;
+    position: fixed;
+    top: 2px;
+    left: 29.7%;
+    background: black;
+    height: 0px;
+  color:gray;
+  width: 380px;
   font-size: 30px;
   text-align: right;
-  padding-right: 10px;
+  padding-right: px;
   padding-top: 5px;
   height: 100px;
 
 }
 
 .footer {
-    position: fixed;
-    left: 100px;
-    bottom:100px;
-    width: 100%;
     color: orangered;
     text-align: center;
     height: 40px;
+    position: fixed;
 }
+
+
+
+
 
