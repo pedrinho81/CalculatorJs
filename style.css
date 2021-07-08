@@ -18,16 +18,20 @@ body {
 }
 
 .calculator {
-    position:fixed;
-    top: 26%;
-    left: 50%;
+    /* position: absolute; */
+    top: 10%;
+    margin:auto;
+    
+   
     width: 410px;
-    height: 410px; 
-    margin-left: -17em;
+    height: 600px;  
+     
     padding-bottom: 20px;
 }
 
+
 .numeric {
+    
     width:96px;
     height: 95px;
     display: inline-block;
@@ -39,7 +43,9 @@ body {
     margin-left: -5px;
     padding-top: 20px;
     cursor: pointer;
+    
 }
+
 .zero {
     width: 190px;
 }
@@ -67,9 +73,16 @@ body {
     background: orangered;
     color: white;
 }
-#total {
+
+.total {
+    /* position:inherit; */
+    height: 0;
+    /* background-color: blue; */
+    text-align: right;
+    margin:auto;
     color: white;
 }
+
 #soma:active {
     background: white;
 }
@@ -97,38 +110,39 @@ body {
 }
 
 .visor {
-    position: fixed;
-    top: 100px;
-    left: 29.7%;
-    background-color: black;
     color: white;
-    width: 382px;
-    height: 76px;
     font-size: 40px;
     text-align:right;
-    padding-right: 107px;
+    height: 25.5vh;
+    width: 23.5rem;
+    
+    /* padding-bottom: 10vh; */
+    background-color: black;
+    
+    
 }
 .acc{
-    position: fixed;
-    top: 2px;
-    left: 29.7%;
-    background: black;
-    height: 0px;
+  position: relative; 
+  height: 20vh; 
+    
+  background: black;
+  /* height: 0px; */
   color:gray;
-  width: 380px;
+  width: 49.2vh;
   font-size: 30px;
   text-align: right;
-  padding-right: px;
+  
   padding-top: 5px;
-  height: 100px;
+  /* height: 100px; */
+  padding-bottom: 10vh;
 
 }
 
 .footer {
     color: orangered;
-    text-align: center;
-    height: 40px;
-    position: fixed;
+    text-align: left;
+    position: absolute;
+    top: 20px
 }
 
 

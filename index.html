@@ -11,12 +11,15 @@
     <script src="https://kit.fontawesome.com/656812c01f.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="calculator">
+    <div class="container calculator">
       <div class="visor">
         <div id="accumulator" class="acc"></div>
+         
         <div id="total" class="total" hidden></div>
+        
+        
       </div>
-          
+        <div id="buttons">
           <div class="numeric action" id="C" onclick="clearAll()">C</div>
           <div class="numeric action" id="backspace"onclick="simpleClean()"><i class="fas fa-backspace"></i></div>
           <div class="numeric action" id="porcentagem"onclick="Porcentagem()"><i class="fas fa-percent"></i></div>
@@ -36,7 +39,11 @@
           <div class="numeric zero" onclick="addNumber(0)">0</div>
           <div class="numeric" onclick="addVirgula()">,</div>  
           <div class="numeric action result" onclick="result()"><i class="fas fa-equals"></i> </div>
+        </div>
+         
   
+         
+          
       </div>
     
       <div class="footer">
